@@ -1,0 +1,156 @@
+#contenedor {
+	margin: 0px auto;
+	width: 50%;
+        float: right;
+        width: 67%;
+	/* [disabled]background: #333333; */
+	text-align: center;
+/*	clear: both;*/
+}
+#contenedor h1 {
+	font: italic bold 36px Georgia, "Times New Roman", Times, serif;
+	color: #510500;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	text-shadow:1px 1px 0 #ce4239;
+	-moz-text-shadow:1px 1px 0 #ce4239;
+	-webkit-text-shadow:1px 1px 0 #ce4239;
+}
+#contenedor ul {
+	text-align: left;
+	width: 80%;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	list-style: none;
+	position: relative;
+	float:left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+        margin-top: 25px;
+/*	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;*/
+}
+#contenedor ul li {
+	display: block;
+	float:left;
+	position: relative;
+}
+#contenedor ul li#buscador {
+	float: right;
+	position: relative;
+}
+#contenedor ul li a {/*Listas primer nivel*/
+	font: bold 14px Tahoma, Geneva, sans-serif;
+	color: #373435;
+	text-decoration: none;
+	display: block;
+	float:left;
+	padding: 13px;
+        
+}
+#contenedor ul li a:hover, #contenedor ul li a.active {/*Estado Hover/Activo de los enlaces*/
+        color: #FEB447;
+	font-weight: bold;
+        opacity:0.9;
+}
+#contenedor ul li ul {/*Estilos de la lista secundaria*/
+	margin: 0px;
+	padding: 0px;
+	width: 150px;
+	height: 0;
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 43px;
+	border: 0;
+	opacity: 0;
+	filter: alpha(opacity=0); /* Internet Explorer*/
+	overflow: hidden;
+	background: #333;
+	z-index: -1;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+#contenedor ul li ul.children li a{
+	color: #fff !important;
+	padding: 13px 0 13px 20px;
+	width: 130px;
+	border-bottom: 1px solid #CEE5ED;
+	background: url(../img/arrow-normal.png) no-repeat 7px center !important;
+	font-size: 12px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#contenedor ul li ul li:last-child a{border-bottom:none !important;}
+#contenedor ul li ul li a:hover{
+	color: #FEB447 !important;
+	font-weight: bold;
+	padding-left:28px;
+	background: url(../img/arrow-normal.png) no-repeat 15px center !important;
+}
+#contenedor ul li:hover ul.children{height:auto;opacity:1;z-index:1000}
+#contenedor ul#menu:after {
+	/* Posiciona la sobora por detras del color de la caja*/
+	z-index: -1;
+	position: absolute;
+	/* no aplico ning�n contenidos HTML */
+	content: "";
+	/* posiciona la sombra con respecto al derecho y superior */
+	right: 10px;
+	top: 45%;
+	/* configura el ancho */
+	width: 48%;
+	height: 20px;
+	/* color de fondo */
+	background: #901D78;
+	/* definicion de la sombra estandar para box-shadow */
+	box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+	/* rotacion de la sombra */
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+#contenedor ul#menu:before{
+	/* Posiciona la sobora por detras del color de la caja*/
+	z-index: -1;
+	position: absolute;
+	/* no aplico ning�n contenidos HTML */
+	content: "";
+	/* posiciona la sombra con respecto al izquierdo y superior */
+	left: 10px;
+	top: 45%;
+	/* configura el ancho */
+	width: 50%;
+	height: 20px;
+	/* color de fondo */
+	background: #901D78;
+	/* definicion de la sombra estandar para box-shadow */
+	box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+	/* rotacion de la sombra */
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+#contenedor ul li ul#menu:before,#contenedor ul li ul#menu:after{visibility:hidden;}

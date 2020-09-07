@@ -1,0 +1,56 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+a.tab {
+	color: #000;
+	display: block;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 6px 6px 0px 0px;
+	border-radius: 6px 6px 0px 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	margin-right: 2px;
+	line-height: 26px;
+	background-color: #ECEBEC;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-left-color: #CCC;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+a.active, a.tab:hover {
+	background-color:#FFF;
+	color: #FFF;
+	background-color:#004A9B;
+	border-top-color: #639CC7;
+	border-right-color: #639CC7;
+	border-left-color: #639CC7;
+	text-shadow: 1px 1px 0 #000;
+}
+
+.tabs {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	clear: both;
+}
+
+
+.tab_content {
+	padding: 10px;
+	clear: both;
+	border: 1px solid #f0f0f0;
+}
